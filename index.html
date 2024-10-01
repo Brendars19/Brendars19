@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt br">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edgo">
+    <meta name = "vieport" content="with=device-with, initial-scale=1.0">
+    <title>login</title>
+    <style>
+
+         *{
+            box-sizing: border-box;
+         }
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, #ff0000, #c71585);
+
+         }
+         div{
+            text-align: center; 
+            top: 50%;
+            left: 50%;
+            padding: 160px;
+            color: white;
+
+
+          
+         }
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+     <div>
+        <h1>Login</h1>
+        <input type="text" placeholder="codigo" id="codigo">
+        <input type="password" placeholder="senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+     </div>
+     <script>
+
+        function logar(){
+            var login = document.getElementById('codigo').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "7anos" && senha =="14092017"){
+                alert('te amo');
+                location.href = "file:///sysroot/home/brenda/77772/index.html";
+            }else{
+                alert('usuario ou senha incorretos');
+            }
+        }
+     </script>
+</body>
+    
+
+</html>N
